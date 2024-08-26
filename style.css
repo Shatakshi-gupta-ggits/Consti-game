@@ -1,6 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #333;
+  background-image: url('Coverimg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
 }
@@ -44,6 +48,7 @@ body {
   background-color: #ff7f00;
 }
 
+
 .container {
   margin: 50px auto;
   padding: 20px;
@@ -52,11 +57,13 @@ body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   width: 80%;
   text-align: center;
+  z-index: 1;
+  position: relative;
 }
 
 h1 {
   font-family: 'Brick Sans', sans-serif;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: #333;
   animation: colorChange 3s infinite alternate;
@@ -69,7 +76,7 @@ h1 {
 
 @keyframes colorChange {
   0% { color: #333; }
-  100% { color: #ff9900; }
+  100% { color: #ff7f00; }
 }
 
 .animation-container {
